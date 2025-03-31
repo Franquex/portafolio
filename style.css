@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+:root {
+    --Primary-color: #000000;
+    --Secundary-color:#f6f6f6;
+    --Terciary-color:#22d4fd;
+    --hover-color: #d3d3d3;
+    --fuente-krona: "Krona One", sans-serif;
+    --fuente-Monserrat: Montserrat;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--Primary-color);
+    color: var(--Secundary-color);
+    box-sizing: border-box;
+}
+.header {
+    padding: 2% 0 0% 15%;
+}
+.header__menu {
+    display: flex;
+    gap: 80px;
+}
+.header_menu_link{
+    font-family: var(--fuente-Monserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--Terciary-color);
+    text-decoration: none;
+}
+
+.Presentation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10% 15%;
+}
+.Presentation__cont{
+    width: 50%;
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+}
+.Presentation_cont_Titl{
+    font-family: var(--fuente-krona);
+    font-size: 2rem;
+}
+.Titulo1{
+    color: var(--Terciary-color);
+}
+
+.Presentation_cont_Txt {
+    font-family: var(--fuente-Monserrat);
+    font-size: 1.5rem;
+}
+.Presentation_cont_Link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.Presentation_Link_Subtitle{
+    font-family: var(--fuente-krona);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.Presentation_cont_Link1{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--Terciary-color);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--Secundary-color);
+    font-family: var(--fuente-Monserrat);    
+}
+.Presentation_cont_Link1:hover{
+    background-color: var(--hover-color);
+}
+.Presentation__img{
+    width: 50%;
+}
+.footer{
+    color: var(--Primary-color);
+    background-color: var(--Terciary-color);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fuente-Monserrat);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+@media(max-width: 1200px){
+    .header{
+        padding: 10%;
+
+    }
+    .header__menu{
+        justify-content: center;
+    }
+    .Presentation{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .Presentation__cont{
+        width: auto;
+    }
+}
